@@ -56,8 +56,8 @@ Ao final do quiz, a pontuação do usuário é exibida no display LCD juntamente
 https://wokwi.com/projects/394202171177652225 <br>
 
 
-#### Protótipo feito com Arduino
-https://wokwi.com/projects/396888355215423489 <br>
+#### Protótipo feito com Esp32
+https://wokwi.com/projects/396888355215423489 <br><br>
 
 <img src="https://github.com/G1lsJn/Curso_Alura_React/assets/143201541/7e8805ff-c4d0-4366-968f-2c5c55cb99d2" width=700>
 
