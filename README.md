@@ -1,6 +1,8 @@
-<h1 align="center"> SIJIA - Quiz Interativo </h1>
+<h1 align="center"> Quiz Interativo </h1>
 
-## <h1> Integrantes </h1>
+<h1 align="center"><img src="https://github.com/Gustavo-b017/challenger-SijiA/assets/143201541/53833eac-cc21-4035-bd66-8de4a3ae08fe" width=150> </h1>
+
+## <h1>  Integrantes </h1>
 
 * 🧑🏽‍💻 Felipe Ferreira ........................ RM553680 
 * 🧑🏽‍💻 Gilson Dias .............................. RM552345 
@@ -59,9 +61,20 @@ https://wokwi.com/projects/394202171177652225 <br>
 
 https://github.com/G1lsJn/challenge_edge/assets/143201541/3e52ba35-acbc-4f91-8f52-1da04734349e
 
+## 📈 Envio dos dados para internet
+
+### Estrutura do node-red
+<img src="https://github.com/Gustavo-b017/challenger-SijiA/assets/143201541/dd535ef4-8459-4d3d-af4f-d83c1614d359" width=700>
+
+### Painel da Tago
+<img src="https://github.com/Gustavo-b017/challenger-SijiA/assets/143201541/5de9b054-d539-4446-8e5d-048595ef8833" width=700>
+
 ## Protótipo físico:
 
 ### 📽️ Vídeo demostrativo: 
+
+### 🔗 Link: 
+https://youtu.be/uZpetHS-DDY
 
 <img src="https://github.com/G1lsJn/Curso_Alura_React/assets/143201541/f6e12c3f-ae42-4480-b86a-cf2959866e04" width=700>
 
