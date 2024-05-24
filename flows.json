@@ -1,0 +1,146 @@
+[
+    {
+        "id": "67766b6ee251d380",
+        "type": "tab",
+        "label": "Quiz_Sijia",
+        "disabled": false,
+        "info": "Integrando o simuide com a internet",
+        "env": []
+    },
+    {
+        "id": "9414d1b50dcbe33f",
+        "type": "serial in",
+        "z": "67766b6ee251d380",
+        "name": "",
+        "serial": "7edbb80e6b3d21f3",
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "7c9170277138e2e7"
+            ]
+        ]
+    },
+    {
+        "id": "7c9170277138e2e7",
+        "type": "json",
+        "z": "67766b6ee251d380",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "494dbc0059c5e812"
+            ]
+        ]
+    },
+    {
+        "id": "494dbc0059c5e812",
+        "type": "function",
+        "z": "67766b6ee251d380",
+        "name": "function pontuacao",
+        "func": "var nota = {\n    payload: {\n        \"variable\": \"pontuacao\",\n        \"unit\": \"pontos\",\n        \"value\": msg.payload.pontuacao.toString()\n    }\n};\n\nreturn nota;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "04e1fcaa3e5b02f5",
+                "5b092521daf39d14"
+            ]
+        ]
+    },
+    {
+        "id": "04e1fcaa3e5b02f5",
+        "type": "mqtt out",
+        "z": "67766b6ee251d380",
+        "name": "",
+        "topic": "tago/data/post",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "93939f11c23a3a50",
+        "x": 1000,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "5b092521daf39d14",
+        "type": "debug",
+        "z": "67766b6ee251d380",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7edbb80e6b3d21f3",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM12",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "93939f11c23a3a50",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.tago.io",
+        "port": "1883",
+        "clientid": "Sijia_mqtt",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
